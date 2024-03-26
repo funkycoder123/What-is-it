@@ -1,0 +1,230 @@
+/*defual color name*/
+:root{
+    --blue:#0073cf;
+    --dark-blue:#003967;
+    --black:#000000;
+    --white:#ffffff;
+    --dark-gray:#262626;
+    --light-green:#7cfc00;
+}
+
+
+.happy-monkey-regular {
+  font-family: "Happy Monkey", system-ui;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,h1 h2, form ,input , button{
+  font-family: 'Happy Monkey', system-ui;
+  margin:0;
+  padding:0;
+}
+
+
+body{
+  background-color:var(--white); /*White*/
+}
+
+
+
+/*header stlyes*/
+
+h1,h2{
+    color:var(--blue); 
+    text-align: center;
+    padding: 20px 0; 
+}
+
+
+/*Navigation bar stlyes*/
+
+.nav-bar{
+  color:var(--white); 
+  text-align: center;
+  padding:10px 0;
+
+}
+
+.nav-bar a{
+  color: var(--dark-blue);
+  text-decoration:none;
+  margin:0 1rem;
+}
+
+a{
+  position:relative;
+  text-decoration:none;
+  padding:0 10px;
+}
+a:after{
+  content: "";
+  position: absolute;
+  background-color:var(--blue);
+  height:3px;
+  width:0;
+  left:0;
+  bottom: -10px;
+}
+
+a:hover:after{
+  width: 100%;
+}
+
+/*form stlyes*/
+
+form{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top: 20px;
+}
+
+
+label{
+  margin-bottom:10px;
+  font-weight:bold;
+  color:var(--dark-blue);
+}
+
+input[type="text"],
+input[type="password"]{
+  width: 300px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--black); /* Black */
+  border-radius: 5px;
+}
+
+
+button[type="submit"],
+button[type="logout"]{
+  background-color:var(--blue);
+  font-weight:bold;
+  color:var(--dark-blue);
+  border-radius: 10px; 
+  padding: 10px 20px;
+  border:none;
+  cursor:pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover{
+  background-color:var(--white);
+}
+
+/*search css below*/
+
+#images{
+  width: 100%;
+  height: auto;
+ /*positioning not working yet*/
+  margin-top: 20px;
+  margin-bottom:20px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.hidden{
+  width: 200px;
+  height: 120px;
+}
+
+
+input[type="file"] {
+  padding:10px;
+  margin-top:10px;
+  border:1px solid var(--dark-blue);
+  border-radius:5px;
+  width: 200px; /*will adjust later*/
+  color:red;
+  background-color: #f5f5f5;
+  margin-bottom:20px;
+  
+}
+
+input[type="file"]:hover{
+   border-color: #003967;
+  cursor:pointer;
+}
+
+input[type="file"]:focus {
+    outline: none; 
+    border-color: #003967;
+}
+
+input::placeholder {
+  color: var(--dark-blue);
+}
+
+
+/*fotter page*/
+
+footer{
+  background:var(--dark-gray);
+  height: auto;
+  width:100vw;
+  padding-top:40px;
+  color:var(--dark-blue);
+  margin-top: 50px;
+}
+
+.footer-content{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform:capitalize;
+  line-height:2rem;
+  color:var(--blue);
+}
+
+.footer-content p{
+  max-width:500px;
+  margin:10px auto;
+  line-height:28px;
+  font-size:14px;
+  color:var(--white);
+}
+
+.team-socials{
+  list-style:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:1rem 0 3rem 0;
+}
+
+.team-socials li{
+    margin:0 10px;
+    
+}
+
+.team-socials a{
+  text-decoration:none;
+  color:var(--blue);
+}
+
+.team-socials a i{
+  font-social:1.1rem;
+  transition:color .4s ease;
+}
+
+.team-socials a:hover i{
+  color:var(--black);
+  
+}
+
+.footer-bottom span{
+  text-transform :uppercase;
+  opacity: .4;
+  font-weight:200;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>What is it?</title>
+    <link rel="stylesheet" href="static/style.css">
+  
+  <link rel="icon" type="image/x-icon" href="https://iconifier.net/iconified/cf_65d1449686b89_360_F_106041686_GHwHXPwa13rq8vjMFJmdw4On2Vt4ZoMf/favicon.ico" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Happy+Monkey&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <h1> <p style="font-family: ">What Is It?</h1>
+
+  <div class="nav-bar">
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('search') }}">Search</a>
+    <a href="{{ url_for('register') }}">Register</a>
+    <button type="logout">Logout</button>
+  </div>
+
+  <h2>Anything Search.</h2>
+
+
+  <!--<li class "flex-item">Dish name:</li>-->
+  <!--<input type="text" id="food-name" placeholder="Input food name"><br>-->
+  
+
+
+  <form action="/upload" method="post" enctype="multipart/form-data" id="c">
+    <label for="fimage">Upload Image:</label>
+     <input type = "file" name = "file" id="fimage"/> <!--choose file btn -->
+     <button type = "submit"onclick="displayImage()"/>Submit</button>
+  </form>
+  <div id="images"></div>
+
+  <footer>
+    <div class="footer-content">
+      <h3> GOG </h3>
+      <p>Unlock visual discoveries effortlessly. Our advanced image recognition platform, powered by Flask, HTML, CSS, JavaScript, OpenCV, YOLOv8, and MobileNet SSD dataset, delivers rapid insights from your images. Explore the unseen with precision and ease, diving deep into a world of visual exploration. Experience the future of image recognition, now at your fingertips. Explore the GitHub profiles of our creators below. </p>
+
+      
+      <ul class="team-socials">
+      <!--replace "#" with your github link....-->
+          <li><a href="https://github.com/koguma100"><i class="fa fa-github"></i> Will</a></li>
+          <li><a href="https://github.com/sangregoriokimpo"><i class="fa fa-github"></i> Greg</a></li>
+          <li><a href="https://github.com/cheezzu"><i class="fa fa-github"></i> Kevin</a></li>
+          <li><a href="https://github.com/funkycoder123"><i class="fa fa-github"></i> Lucki</a></li>
+      </ul>
+      <div class="footer-bottom">
+        <p>copyright &copy;2024. Designed by <span>GOG</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+  <div class="footer-bottom">
+      <p>copyright &copy;2024. Designed by <span>GOG</span></p>
+  </div>-->
+  
+  <script src="static/index.js"></script>
+</body>
+</html>

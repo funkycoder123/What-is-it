@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>What is it ?</title>
+    <link rel="stylesheet" href="static/style.css">
+  
+  <link rel="icon" type="image/x-icon" href="https://iconifier.net/iconified/cf_65d1449686b89_360_F_106041686_GHwHXPwa13rq8vjMFJmdw4On2Vt4ZoMf/favicon.ico" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Happy+Monkey&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1> <p style="font-family: ">What is the Fruit?</h1>
+
+  <div class="nav-bar">
+    <a href="/">Home</a>
+    <a href="/searchFood">Search</a>
+  </div>
+
+  <h2>Fruit Search</h2>
+
+
+  <!--<li class "flex-item">Dish name:</li>-->
+  <!--<input type="text" id="food-name" placeholder="Input food name"><br>-->
+  
+
+
+  <form action="/upload" method="post" enctype="multipart/form-data" id="c">
+    <label for="fimage">Upload Food Image:</label>
+     <input type = "file" name = "file" id="fimage"/> <!--choose file btn -->
+     <button type = "submit"onclick="displayImage()"/>Submit</button>
+  </form>
+  <div id="images"></div>  
+  <script src="static/index.js"></script>
+</body>
+</html>
